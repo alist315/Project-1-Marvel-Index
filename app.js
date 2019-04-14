@@ -3,6 +3,14 @@ $(() => {
 
   $('form').on('submit', (event) => {
     event.preventDefault();
+    const characName = $("#text").val();
+    if (characName.length === 0) {
+      $("#text").addClass("error");
+      $("#error-message").fadeIn(400);
+    } else {
+      $("#text").removeClass("error");
+      $("#error-message").fadeOut(400);
+    }
     $('form').on('reset', (event) => {
       $('#name').text('');
       $('#description').text('');
@@ -36,5 +44,11 @@ $(() => {
       }
     );
   });
+  const close = (event) => {
+    $("#modal").hide(1500);
+  }
+  $(".marvel").on("click", close);
 
+  document.getElementById("audio").volume = 0.1;
+  // got code from w3 schools
 });

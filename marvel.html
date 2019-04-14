@@ -9,12 +9,22 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="app.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 </head>
 
 <body>
+  <div id="modal">
+    <div class="marvel">
+      <h3>The Marvel Index</h3>
+
+      <p>Welcome to the best marvel experince, where you will learn about your favorite heroes, and villians. Enter if you think you can handle the knowledge of the Marvel Universe!</p>
+      <button id="buttonM">ENTER</button>
+    </div>
+  </div>
+  <h1>THE MARVEL INDEX</h1>
   <form>
-    <h1>MARVEL INDEX</h1>
-    <input type="text" placeholder="Character Name" />
+    <input type="text" id="text" placeholder="Character Name" />
+    <p id="error-message">Fill out character name please!</p>
     <input type="submit" value="Submit" />
     <input type="reset" value="Reset" />
     <dl>
@@ -30,5 +40,7 @@
       </dl>
   </form>
 </body>
-
+<audio autoplay id ="audio">
+  <source src="../Project-1-Marvel-Index/the_avengers_theme.mp3" type="audio/mpeg">
+</audio>
 </html>
