@@ -4,6 +4,7 @@ $(() => {
   $('form').on('submit', (event) => {
     event.preventDefault();
     const characName = $("#text").val();
+    $("dl").addClass("index");
     if (characName.length === 0) {
       $("#text").addClass("error");
       $("#error-message").fadeIn(400);
@@ -16,6 +17,7 @@ $(() => {
       $('#description').text('');
       $('img').attr('src', '');
       $('#coms').text('');
+      $("dl").removeClass("index");
     })
 
     const userInput = $('input[type="text"]').val();

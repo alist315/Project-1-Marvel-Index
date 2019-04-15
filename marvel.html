@@ -10,6 +10,7 @@
   <script type="text/javascript" src="app.js"></script>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -25,22 +26,44 @@
   <form>
     <input type="text" id="text" placeholder="Character Name" />
     <p id="error-message">Fill out character name please!</p>
-    <input type="submit" value="Submit" />
-    <input type="reset" value="Reset" />
+    <input type="submit" class="button" value="Submit" />
+    <input type="reset" class="button" value="Reset" />
     <dl>
-        <dt>Character Name</dt>
-        <dd id="name"></dd>
-        <dt>Back-Story</dt>
-        <dd id="description"></dd>
-        <dt>Suit</dt>
-        <dd id="image"><dd>
-          <img src="" alt="">
-          <dt class = "comics">Comics</dt>
-          <dd id = "coms"></dd>
-      </dl>
+      <div class="name">
+      <dt>Name</dt>
+      <dd id="name"></dd>
+    </div>
+    <div class="image">
+      <dt>Picture-Id</dt>
+      <dd id="image">
+      <dd>
+        <img src="" alt="">
+      </div>
+      <div class="coms">
+      <dt class="comics">Comics</dt>
+      <dd id="coms"></dd>
+    </div>
+    <div class="story">
+      <dt>Back-Story</dt>
+      <dd id="description"></dd>
+    </div>
+    </dl>
   </form>
 </body>
-<audio autoplay id ="audio">
+<audio autoplay id="audio">
   <source src="../Project-1-Marvel-Index/the_avengers_theme.mp3" type="audio/mpeg">
 </audio>
+<footer>
+  <div class="footer">
+    <a href="http://www.facebook.com">
+      <i class="fa fa-facebook-square"></i>
+    </a>
+    <a href="http://www.twitter.com">
+      <i class="fa fa-twitter-square"></i>
+    </a>
+    <a href="http://www.instagram.com">
+      <i class="fa fa-instagram"></i>
+    </a>
+  </div>
+
 </html>
