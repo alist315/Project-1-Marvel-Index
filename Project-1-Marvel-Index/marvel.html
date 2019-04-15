@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MARVEL INDEX</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="modal">
+    <div class="marvel">
+      <h3>The Marvel Index</h3>
+
+      <p>Welcome to the best marvel experince, where you will learn about your favorite heroes, and villians. Enter if you think you can handle the knowledge of the Marvel Universe!</p>
+      <button id="buttonM">ENTER</button>
+    </div>
+  </div>
+  <h1>THE MARVEL INDEX</h1>
+  <form>
+    <input type="text" id="text" placeholder="Character Name" />
+    <p id="error-message">Fill out character name please!</p>
+    <input type="submit" class="button" value="Submit" />
+    <input type="reset" class="button" value="Reset" />
+    <dl>
+      <div class="name">
+      <dt>Name</dt>
+      <dd id="name"></dd>
+    </div>
+    <div class="image">
+      <dt>Picture-Id</dt>
+      <dd id="image">
+      <dd>
+        <img src="" alt="">
+      </div>
+      <div class="coms">
+      <dt class="comics">Comics</dt>
+      <dd id="coms"></dd>
+    </div>
+    <div class="story">
+      <dt>Back-Story</dt>
+      <dd id="description"></dd>
+    </div>
+    </dl>
+  </form>
+</body>
+<audio autoplay id="audio">
+  <source src="../Project-1-Marvel-Index/the_avengers_theme.mp3" type="audio/mpeg">
+</audio>
+<footer>
+  <div class="footer">
+    <a href="http://www.facebook.com">
+      <i class="fa fa-facebook-square"></i>
+    </a>
+    <a href="http://www.twitter.com">
+      <i class="fa fa-twitter-square"></i>
+    </a>
+    <a href="http://www.instagram.com">
+      <i class="fa fa-instagram"></i>
+    </a>
+  </div>
+
+</html>
