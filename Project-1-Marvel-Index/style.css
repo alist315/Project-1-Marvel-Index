@@ -132,3 +132,7 @@ dt{
   opacity: 1;
   transform: translateY(0);
 }
+@media screen (max-width:500px);
+.story, .name, .image, .coms {
+  width: 100%;
+}
