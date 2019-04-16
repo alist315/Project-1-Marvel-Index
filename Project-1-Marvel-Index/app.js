@@ -42,7 +42,7 @@ $(() => {
         $('#coms').append(unlist);
       },
       (error) => {
-        console.log('Error');
+        console.log(error);
       }
     );
   });
