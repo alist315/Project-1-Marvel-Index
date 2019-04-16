@@ -160,4 +160,7 @@ h2 {
   .story h2 {
     text-align: center;
   }
+  dl {
+    margin: 0px 0px 0px 0px;
+  }
 }
