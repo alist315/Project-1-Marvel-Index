@@ -1,6 +1,7 @@
 html {
   font-family: 'fjalla one';
   background-image: url("../Project-1-Marvel-Index/Background.jpg");
+  background-color: black;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -33,7 +34,6 @@ h1 {
   top: 50%;
   left: 60%;
   background: #C92323;
-  ;
   opacity: .8;
   width: 80%;
   padding: 20px;
@@ -136,6 +136,7 @@ dl {
 h2 {
   color: white;
   font-size: 20px;
+  text-align: center;
 }
 
 .index {
