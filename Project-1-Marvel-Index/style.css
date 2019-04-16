@@ -71,7 +71,7 @@ footer {
 }
 
 .button {
-  background-color:#C92323;
+  background-color: #C92323;
   border: 0;
   font-size: 12px;
   outline: 0;
@@ -80,11 +80,13 @@ footer {
   border-radius: 3px;
   transition: all .8s ease-in-out;
 }
-.button:hover{
-	opacity: 0.7;
+
+.button:hover {
+  opacity: 0.7;
   transform: rotate(720deg);
 }
-#text{
+
+#text {
   border: 0;
   font-size: 12px;
   outline: 0;
@@ -92,47 +94,67 @@ footer {
   margin-top: 20px;
   border-radius: 3px;
 }
-dl{
-	display:flex;
-	justify-content: space-around;
-	flex-flow: wrap row;
-  width:80%;
+
+dl {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap row;
+  width: 80%;
   margin: 0px 150px 0px 150px;
-  opacity:0;
+  opacity: 0;
   transform: translateX(-20%);
   transition: all 1.15s ease-in-out;
-
 }
+
 .name {
-  width:40%;
+  width: 40%;
   font-size: 25px;
 }
-#name{
-  padding-right:40px;
+
+#name {
+  padding-right: 40px;
 }
-.story{
+
+.story {
   width: 40%;
   font-size: 18px;
   text-align: justify;
 }
-.story dt{
+
+.story dt {
   padding-left: 230px;
 }
-.image{
-  width:40%;
+
+.image {
+  width: 40%;
 }
-.coms{
+
+.coms {
   font-size: 18px;
 }
-dt{
-  color:white;
+
+h2 {
+  color: white;
   font-size: 20px;
 }
-.index{
+
+.index {
   opacity: 1;
   transform: translateY(0);
 }
-@media screen (max-width:500px);
-.story, .name, .image, .coms {
-  width: 100%;
+
+@media screen and (max-width:800px) {
+  .story, .name, .image, .coms {
+    width: 100%;
+    display: block;
+    margin: 0px 150px 0px 0px;
+  }
+
+  html {
+    background-color: black;
+  }
+
+  .story dt {
+    padding-left: 130px
+  }
 }
