@@ -152,9 +152,11 @@ h2 {
 
   html {
     background-color: black;
+    background-size: cover;
+    text-align: center;
   }
 
-  .story dt {
-    padding-left: 130px
+  .story h2 {
+    text-align: center;
   }
 }
