@@ -148,7 +148,7 @@ h2 {
   .story, .name, .image, .coms {
     width: 100%;
     display: block;
-    margin: 0px 150px 0px 0px;
+    margin: 0px 0px 0px 0px;
   }
 
   html {
